@@ -91,5 +91,7 @@ class WebDocument:
 
 
 if __name__ == '__main__':
-    wdoc = WebDocument.make("https://www.telegraph.co.uk/business/2024/02/04/tories-must-cut-corporation-tax-beat-labour-election/"
+    wdoc = WebDocument.make(
+        "https://www.telegraph.co.uk/business/2024/02/04/tories-must-cut-corporation-tax-beat-labour-election/"
+    )
     wdoc.to_ebook()

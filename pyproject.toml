@@ -36,8 +36,14 @@ Documentation = "https://github.com/onadoc/epub3-downloader#readme"
 Issues = "https://github.com/onadoc/epub3-downloader/issues"
 Source = "https://github.com/onadoc/epub3-downloader"
 
+[project.scripts]
+downloader = "src.epub3_downloader.downloader:main"
+
 [tool.hatch.version]
-path = "src/epub3-downloader/__about__.py"
+path = "src/epub3_downloader/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/epub3_downloader"]
 
 [tool.hatch.envs.default]
 dependencies = [
