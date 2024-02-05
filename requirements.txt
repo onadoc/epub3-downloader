@@ -1,0 +1,4 @@
+readability-lxml~=0.8
+EbookLib~=0.18
+requests~=2.31
+BeautifulSoup4~=4.12
